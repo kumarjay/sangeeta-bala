@@ -6,6 +6,7 @@ app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 abc = 'hello world'
+xyz = 'test2'
 
 @app.route('/')
 def index():
