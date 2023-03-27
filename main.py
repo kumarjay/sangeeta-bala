@@ -5,8 +5,11 @@ from send_email import send_mail
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
+test = "hello"
+
 @app.route('/')
 def index():
+    print('Address : ', request.remote_addr)
     return render_template('index.html', name=request.args.get('name'))
 
 
